@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/dummy-products-frontend/static/js/main.f529d99b.js",
+    "index.html": "/dummy-products-frontend/index.html",
+    "main.f529d99b.js.map": "/dummy-products-frontend/static/js/main.f529d99b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f529d99b.js"
+  ]
+}

@@ -22,10 +22,12 @@ const App = () => {
   const fetchAPI = (url) => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data.products))
-      .then((data) => setTotalProducts(data.total))
-      .then((data) => setLimit(data.limit))
-      .then((data) => setSkip(data.skip));
+      .then((data) => {
+        setData(data.products);
+        setTotalProducts(data.total);
+        setLimit(data.limit);
+        setSkip(data.skip);
+      });
   };
 
   const paginate = (pageNumber) => {
@@ -33,7 +35,7 @@ const App = () => {
       "https://dummyjson.com/products?limit=" +
         limit +
         "&skip=" +
-        (pageNumber - 1) * 10
+        (pageNumber - 1) * limit
     );
   };
 
